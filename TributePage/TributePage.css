@@ -14,7 +14,7 @@ body {
   height: auto;
 }
 
-#test {
+#title {
   font-family: helvetica, sans-serif;
   font-size: 50px;
 }
@@ -30,6 +30,7 @@ body {
 }
 
 #image {
+  display: block;
   border-color: lightgray;
   border-width: 1px;
   border-style: solid;
@@ -55,7 +56,6 @@ body {
 /*li::first-letter{
   font-weight: bold;
 }*/
-
 #quote {
   text-align: left;
   margin: 10px 200px 10px 200px;
@@ -67,6 +67,23 @@ body {
 #hed {
   font-size: 20px;
   text-align: center;
+}
+
+#tribute-link {
+  color: blue;
+  text-decoration: none;
+}
+
+#tribute-link:hover {
+  text-decoration: underline;
+}
+
+#tribute-link:active {
+  color: green;
+}
+
+#tribute-link:visited {
+  color: purple;
 }
 
 footer {
