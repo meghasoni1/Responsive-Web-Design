@@ -10,6 +10,8 @@ body {
   place-items: center;
   text-align: center;
   border-radius: 0.5%;
+  width: 100%;
+  height: auto;
 }
 
 #test {
@@ -28,11 +30,12 @@ body {
 }
 
 #image {
-  width: 900px;
   border-color: lightgray;
   border-width: 1px;
   border-style: solid;
   border-radius: 1%;
+  max-width: 100%;
+  height: auto;
 }
 
 #img-caption {
@@ -44,7 +47,7 @@ body {
 
 #timeline {
   text-align: left;
-  margin: 10px 300px 10px 300px;
+  margin: 10px 200px 10px 200px;
   text-align: justify;
   line-height: 40px;
 }
@@ -52,9 +55,10 @@ body {
 /*li::first-letter{
   font-weight: bold;
 }*/
+
 #quote {
   text-align: left;
-  margin: 10px 300px 10px 300px;
+  margin: 10px 200px 10px 200px;
   text-align: justify;
   line-height: 40px;
   font-style: italic;
@@ -69,5 +73,5 @@ footer {
   font-weight: bold;
   font-size: 19px;
   margin: 1px 30px 1px 30px;
-  text-align: justify;
+  text-align: center;
 }
