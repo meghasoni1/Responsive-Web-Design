@@ -1,0 +1,110 @@
+body{
+  background: teal;
+  display: block;
+  text-align: center;
+}
+
+#box{
+  background-color: white;
+  max-width: 50vmax;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+#image{
+  display: block;
+  max-width: 50vmax;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title{
+  font-family: monospace, sans-serif;
+  text-align: left;
+  padding-left: 2em;
+  color: teal;
+}
+
+#description{
+  text-align: left;
+  padding-left: 4em;
+  color: #363636;
+}
+
+#survey-form{
+  margin-right: auto;
+  text-align: left;
+  padding-left: 4em;
+  font-size: 1em;
+}
+
+#name, #email, #number, #dropdown, #recommend-group, #topics, #comments{
+    border-style: none;
+    border-bottom-style: solid;
+    border-color: #bebdb8;
+    border-width: thin;
+}
+
+:focus{
+  outline:none;
+}
+
+/*
+#name:focus {
+  outline:none;
+}
+
+#email:focus {
+  width: 0px;
+  outline:none;
+}
+
+#number:focus{
+  outline:none;
+  color: #818380;
+}
+
+#comments:focus {
+  outline:none;
+}
+*/
+
+#dropdown:focus{
+  outline: none;
+  color: black;
+}
+
+button {
+    border-radius: 5px;
+    color: white;
+    background-color: teal;
+    padding: 5px 20px 5px 20px;
+  }
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 15px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
