@@ -1,0 +1,67 @@
+<head>
+  <title>Survey Page</title>
+</head>
+<body>
+ <main>
+    <div id="box">
+    <img id="image" src="https://i.pinimg.com/originals/75/b4/a0/75b4a0c8f8f919a494bfa7472c402030.jpg" alt="flatimage-scenary">
+    <h1 id="title">Survey Form</h1>
+    <hr color="#818380" position="relative" style="width:40vmax; text-align:center; margin-left:auto">
+    <p id="description">This survey is to understand your webinar experience. Thank you!</p><br><br>
+    <div>
+      <form id="survey-form">
+      <label for="name" id="name-label">What is your full name?</label><br><br>
+      <input id="name" required type="text" placeholder="Enter Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'" name="Name"><br><br>
+      <label for="email" id="email-label">What is your Email?</label><br><br>
+      <input id="email" required type="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'"><br><br>
+      <label for="number" id="number-label">Age</label><br><br>
+      <input id="number" color="#bebdb8" type="number" placeholder="Age" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Age'" min="15" max="50"><br><br>
+      <label for="dropdown">Select your State</label><br><br>
+       <select id="dropdown">
+       <option value="blank"></option>
+       <option value="Karnataka">Karnataka</option>
+       <option value="New Delhi">New Delhi</option>
+       <option value="Haryana">Haryana</option>
+       <option value="Maharashtra">Maharashtra</option>
+       </select>
+      <br><br>
+      <p>Would you recommend this webinar to others?</p>
+      <label for="definitely"> 
+        <input id="definitely" value="definitely" type="radio" name="recommend-group">Definitely
+      </label>
+      <br>
+      <label for="maybe">
+        <input id="maybe" value="maybe"  type="radio" name="recommend-group">Maybe
+      </label>
+      <br>
+      <label for="notsure">
+        <input id="notsure" value="notsure"  type="radio" name="recommend-group">Not Sure
+      </label>
+      <br>
+      <p>What other topics you want to be covered?</p>
+      <label for="management">
+        <input id="management" value="management" type="checkbox" name="topics">Project Management
+      </label>
+      <br>
+      <label for="analysis">
+        <input id="analysis" value="analysis" type="checkbox" name="topics">Business Analysis
+      </label>
+      <br>
+      <label for="frontend">
+        <input id="frontend" value="frontend" type="checkbox" name="topcis">Front End
+      </label>
+      <br>
+      <label for="backend">
+        <input id="backend" value="backend" type="checkbox" name="topics">Back End
+      </label>
+      <br><br>
+      <label for="comments">Please let us know any additional comments (optional):
+      </label><br><br>
+        <textarea id="comments" rows="1" cols="50" placeholder="Enter your comments here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your comments here'"></textarea>
+      <br><br>
+        <button type="submit" id="submit"><span>Submit</span></button>
+    </form>
+    </div>
+  </div>
+ </main>
+</body>
