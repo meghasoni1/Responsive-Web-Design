@@ -1,0 +1,185 @@
+body{
+  background: white;
+  display:flex;
+  padding-top: 65px;
+}
+
+#nav-bar{
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.09);
+  z-index:1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: white;
+  text-align: right;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+li:first-child{
+  float: left;
+  margin-left: 2em;
+}
+
+li:nth-child(2){
+  float: left;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  color: #48494b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #3895d3;
+}
+
+#header-img{
+  width: 40px;
+  height: 30px;
+  background-image: blue;
+}
+
+#header-img2{
+  width: 60px;
+  height: 45px;
+}
+
+#test{
+  display: flex;
+  flex-direction: row;
+}
+
+#test2{
+  display: flex;
+  flex-direction: column;
+}
+
+#content,#form,h2,h3,h4{
+  font-size:30px;
+  font-family:sans-serif, cursive;
+  color:#48494b;
+  padding: 0 90px 0 90px;
+  text-align:justify;
+}
+
+textarea::placeholder{
+  font-family: helvetica;
+}
+
+#pricing {
+  padding: 0 90px 0 90px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family:sans-serif, cursive;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%/3);
+  margin: 20px;
+  border: 1px solid #bebdb8;
+  border-radius: 3px;
+}
+
+.product > .level {
+  border: 1px solid #bebdb8;
+  color: #3895d3;
+  padding: 25px 0;
+  width: 100%;
+  font-weight: 700;
+}
+
+.product > button {
+  border-radius: 5px;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  background-color: #3895d3;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.product > button:hover {
+  background-color: #58cced;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+#submit {
+    border-radius: 5px;
+    color: white;
+    background-color: #3895d3;
+    padding: 5px 20px 5px 20px;
+  }
+
+#submit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#submit span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#submit:hover span {
+  padding-right: 15px;
+}
+
+#submit:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  border-top: 1px solid #c7c6c1;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
